@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<link rel="stylesheet" href="Ikofirstblog.css">
+
+<body>
+  <div>
+  <h1 class="Iko"> Iko blogja </h1>
+  </div>
+  <h2 class="Poszthozza"> Posztocska hozzáadása </h2>
+  <div class="Bej"> Bejegyzés címe </div>
+  <form>
+    <input class="cim" type="text">
+    <div class="Bej">Tartalom</div>
+    <textarea id="Tartalomid"></textarea>
+    <button id='gomb'>Tedd közzé!</button>
+  </form>
+
+  <h3 class="Poszthozza"> Közzétett posztocskák </h3>
+  <main>
+    <div id="Firebasebolvissza"></div> 
+    <div>
+      <h3>Megküzdöttem a második napon is</h3>
+      <p>De még hogy!</p>
+    </div>
+    <div>
+      <h3>Megküzdöttem az első napon</h3>
+      <p> Meg bizony!</p>
+    </div>
+  </main>
+  <script src="https://www.gstatic.com/firebasejs/5.8.4/firebase.js"></script>
+  <script>
+    // Initialize Firebase
+    var config = {
+      apiKey: "AIzaSyA8rSoE7LFAUGi84Bok6HNqn9FtNPyE3MY",
+      authDomain: "ikofirstblog.firebaseapp.com",
+      databaseURL: "https://ikofirstblog.firebaseio.com",
+      projectId: "ikofirstblog",
+      storageBucket: "ikofirstblog.appspot.com",
+      messagingSenderId: "1076387042835"
+    };
+    firebase.initializeApp(config);
+  </script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="Ikofirstblog.js"></script>
+</body>
+
+</html>
